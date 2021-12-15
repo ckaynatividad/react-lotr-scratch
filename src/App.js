@@ -1,5 +1,9 @@
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Books from './views/Books/books';
+import Characters from './views/Characters/characters';
+import Films from './views/Films/films';
+import Main from './views/Main/main';
 
 function App() {
   return <div className="App">
@@ -19,14 +23,21 @@ function App() {
         </NavLink>
       </header>
       <Switch>
-    <Route path="/" exact>
-      <h1>Home</h1>
-      <Home />
-    </Route>
-    <Route path="/films" exact>
-      <h1>films</h1>
-      <FilmL
-    </Route>
+        <Route path="/" exact>
+          <h1>Home</h1>
+          <Main />
+        </Route>
+        <Route path="/films">
+          <h1>films</h1>
+          <Films />
+        </Route>
+        <Route path="/characters">
+          <h1>characters</h1>
+          <Characters />
+        </Route>
+        <Route path="/books">
+          <Books />
+        </Route>
       </Switch>
     </BrowserRouter>
   </div>;

@@ -1,15 +1,15 @@
 export async function fetchCharacters(race, query = '') {
-  const urlParams = new URLSearchParams();
-  if (race !== 'All') {
-    urlParams.set('race', `eq.${race}`);
-  }
-  if (query.length > 0) {
-    urlParams.set('name', `ilike.%${query}%`);
-  }
-  urlParams.set('select', '*');
+  // const urlParams = new URLSearchParams();
+  // if (race !== 'All') {
+  //   urlParams.set('race', `eq.${race}`);
+  // }
+  // if (query.length > 0) {
+  //   urlParams.set('name', `ilike.%${query}%`);
+  // }
+  // urlParams.set('select', '*');
 
   const resp = await fetch(
-    `${process.env.REACT_APP_SUPABASE_URL}/rest/v1/characters?${urlParams.toString()}`,
+    `${process.env.REACT_APP_SUPABASE_URL}/rest/v1/characters}`,
     {
       headers: {
         apikey: process.env.REACT_APP_SUPABASE_KEY,
