@@ -1,13 +1,14 @@
 import React from 'react';
 
 export default function CharacterList({ characters }) {
+  console.log(characters);
   return (
-    <section>
-      {characters.map(char => (
-        <div key={char.id}>
-          <p>{char.name}</p>
+    <div>
+      {characters.map((char) => (
+        <div key={char.id} className="character">
+          <h1>{char.name}</h1>
         </div>
-      ))};
-    </section>
+      ))}
+    </div>
   );
 }
