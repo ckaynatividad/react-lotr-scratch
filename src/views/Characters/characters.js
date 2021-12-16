@@ -24,7 +24,6 @@ export default function Characters() {
 
   return (
     <div className="character-list">
-      <h1>characters</h1>
       <Controls
         query={query}
         setQuery={setQuery}

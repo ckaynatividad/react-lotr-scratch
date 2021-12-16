@@ -15,7 +15,6 @@ export default function Films() {
 
   return (
     <div>
-      <h1>hi films</h1>
       <FilmsList films={data}/>
     </div>
   );

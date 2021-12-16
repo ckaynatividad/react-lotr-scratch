@@ -14,7 +14,7 @@ export default function Books() {
   
   return (
     <div>
-      <h1>books list</h1>
+      <h1>books</h1>
       <BookList books={data}/>
     </div>
   );
